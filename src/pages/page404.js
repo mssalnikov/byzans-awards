@@ -5,11 +5,11 @@ import { Helmet } from "react-helmet";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
-			<title>
-				Quarkly export
+		<title>
+				Byzans Awards 2020
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<meta name={"description"} content={"Top books and users of Byzans for 2020"} />
+			<link rel={"shortcut icon"} href={"/favicon.jpg"} type={"image/jpg"} />
 		</Helmet>
 		<Link
 			font={"--capture"}

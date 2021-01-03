@@ -147,8 +147,11 @@ const overrides = {
 			"category": "fa",
 			"icon": FaRegComments,
 			"md-font": "--iconMd",
-			"display": "inline-block",
-			"margin-right": "20px"
+			"lg-font": "--iconLg",
+			"font": "normal normal 500 50px/1 --fontFamily-googleMontserrat",
+			// "display": "inline-block",
+			"margin-right": "20px",
+			"width": "50px"
 		}
 	},
 	"stat1": {
@@ -173,8 +176,10 @@ const overrides = {
 			"category": "fa",
 			"icon": FaRegComment,
 			"md-font": "--iconMd",
+			"lg-font": "--iconLg",
+			"font": "--iconLg",
 			"display": "inline-block",
-			"margin-right": "20px"
+			"margin-right": "20px",
 		}
 	},
 	"stat2": {

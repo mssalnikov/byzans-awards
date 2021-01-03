@@ -3,12 +3,13 @@ import { useOverrides } from "@quarkly/components";
 import { Icon } from "@quarkly/widgets";
 import { MdFace } from "react-icons/md";
 const defaultProps = {
-	"category": "md",
+	"category": "fa",
 	"icon": MdFace,
-	"font": "--iconLg",
 	"color": "#ffffff",
-	"width": "auto",
-	"height": "auto"
+	"sm-size": "38px",
+	"md-size": "45px",
+	"lg-size": "50px",
+	"size": "50px",
 };
 const overrides = {};
 

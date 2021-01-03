@@ -8,10 +8,10 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				Byzans Awards 2020
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<meta name={"description"} content={"Top books and users of Byzans for 2020"} />
+			<link rel={"shortcut icon"} href={"/favicon.jpg"} type={"image/jpg"} />
 		</Helmet>
 		<Section
 			background="--color-byzansCr url(https://uploads.quarkly.io/5fe5d9b294657a0021e7d3ef/images/WebMain.png?v=2021-01-03T22:10:47.830Z) center/cover no-repeat"
@@ -197,29 +197,16 @@ export default (() => {
 			grid-gap="40px"
 		>
 			<Components.IdealBookCard sm-width="250px" sm-margin="20px 20px 20px 20px">
+				<Override slot="text">
+					03
+				</Override>
+				<Override slot="stat1">
+					168
+				</Override>
+				<Override slot="stat2">
+					13
+				</Override>
 				<Override slot="image" src="https://uploads.quarkly.io/5fe5d9b294657a0021e7d3ef/images/30%20the%20shadow%20rising%201.png?v=2020-12-28T13:17:43.992Z" />
-				<Override
-					slot="box"
-					sm-grid-auto-columns="1fr "
-					sm-min-width="220px"
-					sm-grid-template-columns="1fr "
-					sm-grid-auto-rows="1fr"
-					sm-grid-template-rows="45px 45px"
-					sm-align-items="center"
-					sm-align-content="center"
-					sm-justify-items="flex-end"
-					sm-position="relative"
-				/>
-				<Override
-					slot="statsIcon"
-					sm-justify-self="start"
-					sm-position="absolute"
-					sm-top="3px"
-					sm-left="20px"
-				/>
-				<Override slot="statsIcon1" sm-justify-self="start" sm-position="absolute" sm-bottom="3px" />
-				<Override slot="stat1" sm-justify-self="center" />
-				<Override slot="stat2" sm-justify-self="center" />
 			</Components.IdealBookCard>
 			<Components.IdealBookCard
 				background="--color-byzansR"
@@ -2069,27 +2056,5 @@ export default (() => {
 			<Override slot="icon" border-color="--color-byzansCr" />
 			<Override slot="link" color="--byzansCr" background="--color-white" />
 		</SocialMedia>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });
