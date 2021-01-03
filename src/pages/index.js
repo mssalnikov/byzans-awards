@@ -2025,7 +2025,7 @@ export default (() => {
 					justify-self="center"
 				/>
 				<Override slot="text1" md-font="normal normal 500 35px --fontFamily-googleMontserrat">
-					JOHN [Sleeples]
+					JOHN [Sleepless]
 					<br />
 					Atium
 				</Override>
