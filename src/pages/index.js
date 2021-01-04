@@ -111,7 +111,7 @@ export default (() => {
 		</Section>
 		<Components.AppLink>
 			<Override slot="link">
-				Let's try
+				Install the app
 			</Override>
 		</Components.AppLink>
 		<Box
@@ -160,7 +160,7 @@ export default (() => {
 				width="auto"
 				margin="30px 0px 30px 0px"
 			>
-				While making this list we counted all activity in each club in 2020. We decided to exclude the books that have already appeared in another status, so no repeating entries. The color of each card corresponds to the book status, just like on Byzans - orange means 'Want to Read', purple means 'Currently Reading', and green means 'Read'. Each book card features 2 numbers - the first is cafe messages, and the second is total of salon posts and comments.
+				While making this list we counted all activity in each club in 2020. The color of each card corresponds to the book status, just like on Byzans - orange means 'Want to Read', purple means 'Currently Reading', and green means 'Read'. Each book card features 2 numbers - the first is cafe messages, and the second is total of salon posts and comments.
 			</Text>
 		</Box>
 		<Box
@@ -198,7 +198,7 @@ export default (() => {
 		>
 			<Components.IdealBookCard sm-width="250px" sm-margin="20px 20px 20px 20px">
 				<Override slot="text">
-					03
+					30
 				</Override>
 				<Override slot="stat1">
 					168
@@ -689,7 +689,7 @@ export default (() => {
 				width="auto"
 				margin="30px 0px 30px 0px"
 			>
-				While making this list we counted all cafe messages and salon posts/comments in 'Currently Reading' clubs, which appeared in 2020. On each card. you can see the total of all club messages (first stat) and the total of salon post and comments (second stat).Take a look at our winners - you might be responsible for their place!
+				While making this list we counted all cafe messages and salon posts/comments in 'Currently Reading' clubs, which appeared in 2020. On each card, you can see the total of all club messages (first stat) and the total of salon post and comments (second stat). Take a look at our winners - you might be responsible for their place!
 			</Text>
 		</Box>
 		<Box
@@ -1088,7 +1088,7 @@ export default (() => {
 				If you want to read books together with people from all over the world, you know what to do! Byzans is always here.
 			</Override>
 			<Override slot="link">
-				Right here
+				Install the app
 			</Override>
 		</Components.AppLink>
 		<Box
@@ -1446,7 +1446,7 @@ export default (() => {
 				Any of the books sound familiar? If none of your friends read the same books as you, you can always discuss them on Byzans!
 			</Override>
 			<Override slot="link">
-				Gimme new friends
+				Install the app
 			</Override>
 		</Components.AppLink>
 		<Box
@@ -2042,7 +2042,7 @@ export default (() => {
 				And that's a wrap for 2020! To all our users: we love you and thank you for staying with us! It was so much fun gathering this list and seeing your favourites over the year. We will keep working hard to ensure you have the best experience on our app. And if you don't use Byzans and still somehow ended up on this website, maybe you should give it a go? We definitely wouldn't mind that :){" "}
 			</Override>
 			<Override slot="link">
-				Have fun!
+				Install the app
 			</Override>
 		</Components.AppLink>
 		<SocialMedia

@@ -11,8 +11,9 @@ const defaultProps = {
 	"justify-items": "center",
 	"padding": "20px 20px 20px 20px",
 	"sm-padding": "20px 20px 20px 20px",
-	"sm-grid-gap": "10px 10px"
+	"sm-grid-gap": "10px 10px",
 };
+
 const overrides = {
 	"text": {
 		"kind": "Text",
@@ -45,7 +46,7 @@ const overrides = {
 			"sm-border-radius": "20px",
 			"sm-width": "80%",
 			"sm-text-align": "center",
-			"sm-height": "120%",
+			// "sm-height": "120%",
 			"sm-display": "flex",
 			"sm-align-items": "center",
 			"sm-justify-content": "center",
@@ -64,7 +65,11 @@ const overrides = {
 			"justify-content": "center",
 			"align-items": "center",
 			"md-width": "40%",
-			"children": "Install the app"
+			"children": "Install the app",
+			"font-weight": "500",
+			"lg-font-weight": "500",
+			"md-font-weight": "500",
+			"sm-font-weight": "500",
 		}
 	}
 };
