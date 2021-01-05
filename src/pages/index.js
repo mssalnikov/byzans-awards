@@ -1,9 +1,11 @@
 import React from "react";
+import styled from 'styled-components'
 import theme from "theme";
-import { Theme, Link, Text, Box } from "@quarkly/widgets";
+import { Theme, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
+
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -2051,10 +2053,63 @@ export default (() => {
 			icon-size="70px"
 			instagram="https://www.instagram.com/byzans.app/"
 			height="100px"
-			padding="0px 0px 100px 0px"
 		>
 			<Override slot="icon" border-color="--color-byzansCr" />
 			<Override slot="link" color="--byzansCr" background="--color-white" />
 		</SocialMedia>
+		<MailContainer>
+			<Mail href="mailto:simon@byzans.com">
+				Or just write us!
+			</Mail>
+		</MailContainer>
 	</Theme>;
 });
+
+const MailContainer = styled.div`
+	margin-top: 30px;
+	margin-bottom: 100px;
+	display: flex;
+	padding: 10px 100px;
+
+	justify-content: center;
+
+	@media (max-width: 576px) {
+		padding: 20px 50px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 20px 70px;
+	}
+`
+
+const Mail = styled.a`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 30px;
+	min-width: 30%;
+	height: 60px;
+
+	border-radius: 20px;
+	background: ${p => p.theme.color.byzansCr};
+
+	font-size: 28px;
+	font-weight: 500;
+	font-family: ${p => p.theme.fontFamily.googleMontserrat};
+
+	&, &:active, &:visited {
+		color: white;
+		text-decoration: none;
+	}
+
+	@media (max-width: 576px) {
+		width: 80%;
+		height: 40px;
+		font-size: 18px;
+	}
+
+	@media (max-width: 768px) {
+		width: 40%;
+	}
+`

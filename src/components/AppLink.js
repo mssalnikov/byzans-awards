@@ -36,7 +36,7 @@ const overrides = {
 	"link": {
 		"kind": "Link",
 		"props": {
-			"href": "#htpps://onelink.to/byzans",
+			"href": "https://onelink.to/byzans",
 			"sm-font": "--leadSm",
 			"sm-text-decoration-line": "initial",
 			"sm-color": "--white",
@@ -74,6 +74,13 @@ const overrides = {
 	}
 };
 
+const sendEvent = () => {
+	console.log('sending event')
+
+	// eslint-disable-next-line no-undef
+	gtag('event', 'install_app', {'event_category': 'conversion'})
+}
+
 const AppLink = props => {
 	const {
 		override,
@@ -82,7 +89,7 @@ const AppLink = props => {
 	} = useOverrides(props, overrides, defaultProps);
 	return <Box {...rest}>
 		<Text {...override("text")} />
-		<Link {...override("link")} />
+		<Link {...override("link")} onClick={sendEvent}/>
 		{children}
 	</Box>;
 };
