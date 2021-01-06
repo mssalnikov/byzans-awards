@@ -2073,12 +2073,12 @@ const MailContainer = styled.div`
 
 	justify-content: center;
 
-	@media (max-width: 576px) {
-		padding: 20px 50px;
-	}
-
 	@media (max-width: 768px) {
 		padding: 20px 70px;
+	}
+
+	@media (max-width: 576px) {
+		padding: 20px 50px;
 	}
 `
 
@@ -2103,13 +2103,13 @@ const Mail = styled.a`
 		text-decoration: none;
 	}
 
+	@media (max-width: 768px) {
+		width: 40%;
+	}
+
 	@media (max-width: 576px) {
 		width: 80%;
 		height: 40px;
 		font-size: 18px;
-	}
-
-	@media (max-width: 768px) {
-		width: 40%;
 	}
 `
